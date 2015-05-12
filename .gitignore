@@ -1,0 +1,10 @@
+*.py[cod]
+*.sw[po]
+*.py~
+.~
+node_modules
+bower_components
+.DS_store
+dist
+test-dist
+tmp

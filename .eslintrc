@@ -1,0 +1,22 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "node": true,
+        "browser": true,
+    },
+    "globals": {
+        "angular": true,
+    },
+    "rules": {
+        "comma-dangle": 0,
+        "no-console": 0,
+        "no-alert": 0,
+        "no-debugger": 0,
+        "strict": [2, "global"],
+        "brace-style": [2, "stroustrup"],
+        "camelcase": [2, {"properties": "never"}],
+        "eol-last": 0,
+        "no-underscore-dangle": 0,
+        "quotes": [2, "double"]
+    }
+}
