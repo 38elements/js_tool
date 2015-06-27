@@ -15,8 +15,7 @@ module.exports = function(option) {
     gulp.task("server-start", ["copy"], function() {
         bs.init({
             server: server,
-            port: option.port,
-            routes: routes
+            port: option.port
         });
     });
     gulp.task("server-reload", ["copy"], function() {
