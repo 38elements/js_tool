@@ -21,5 +21,5 @@ wrench.readdirSyncRecursive("./gulp").filter(function(file) {
 });
 
 gulp.task("default", function (callback) {
-    runSequence("clean", "eslint", "babel-src", "watch", "server-start", callback);
+    runSequence("clean", "eslint", "babel-src", "webpack-src", "watch", "server-start", callback);
 });

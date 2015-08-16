@@ -11,8 +11,7 @@ module.exports = function(config) {
         ],
         reporters: ["dots"],
         files: [
-            "dist/foo.js",
-            "test-dist/foo.spec.js",
+            "test-dist/test.js",
         ]
     });
 };
