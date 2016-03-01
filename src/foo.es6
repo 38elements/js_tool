@@ -1,5 +1,3 @@
-"use strict";
-
 import {bar} from "./bar";
 
 export class Foo {
