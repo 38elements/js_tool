@@ -1,7 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
-var wrench = require("wrench");
+let glob = require("glob");
 var runSequence = require("run-sequence");
 
 var option = {
@@ -14,10 +14,9 @@ var option = {
 
 };
 
-wrench.readdirSyncRecursive("./gulp").filter(function(file) {
-    return (/\.js$/i).test(file);
-}).map(function(file) {
-    require("./gulp/" + file)(option);
+let file_names = glob.sync('./gulp/**/*.js');
+file_names.map(function(name) {
+    require(name)(option);
 });
 
 gulp.task("default", function (callback) {
