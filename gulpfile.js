@@ -14,7 +14,7 @@ var option = {
 
 };
 
-let file_names = glob.sync('./gulp/**/*.js');
+let file_names = glob.sync("./gulp/**/*.js");
 file_names.map(function(name) {
     require(name)(option);
 });
