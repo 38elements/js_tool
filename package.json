@@ -11,6 +11,7 @@
     "browser-sync": "*",
     "browser-sync-spa": "*",
     "del": "*",
+    "glob": "*",
     "gulp": "*",
     "gulp-babel": "*",
     "gulp-eslint": "*",
